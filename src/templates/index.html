@@ -1,0 +1,18 @@
+<html>
+
+   <body>
+      <h1> {{ title }} </h1>
+
+      {% for obj in object_list %}
+      <h4>
+         <a href="{% url "posts:detail" id=obj.id %}">
+
+            {{ obj.title }} <br/>
+
+         </a>
+      </h4>
+      {{ obj.content }} <br/>
+
+      {% endfor %}
+   </body>
+</html>
