@@ -38,7 +38,7 @@ def post_list(request): #list items
 		"object_list": queryset,
 		"title": "Recent Post"
 	}
-	return render(request, 'index.html', context)
+	return render(request, 'base.html', context)
 
 
 def post_update(request, id=None):
