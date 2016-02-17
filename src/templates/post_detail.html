@@ -4,7 +4,9 @@
 
 {% block content %}
 <h1>{{ title }} </h1>
-
+{% if instance.image %}
+<img src='{{ instance.image.url}}' />
+{% endif %}
 <!-- {{ instance.title }}<br/> -->
 {{ instance.content }}<br/>
 <!-- {{ instance.timestamp }}<br/> -->

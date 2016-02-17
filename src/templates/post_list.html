@@ -8,13 +8,16 @@
             {{ obj.title }} <br/>
          </a>
       </h4>
+      {% if obj.image %}
+      <img src='{{ instance.image.url}}' />
+      {% endif %}
       {{ obj.content }} <br/>
    {% endfor %}
 
    <div class="pagination">
     <span class="step-links">
         {% if .has_previous %}
-            <a href="?page={{ object_list.previous_page_number }}">previous</a>
+            <a href="?{{ page_request_var }}={{ object_list.previous_page_number }}">previous</a>
         {% endif %}
 
         <span class="current">
