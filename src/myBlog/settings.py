@@ -39,6 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'posts',
     'dash',
+    'djangobower',
+]
+
+BOWER_INSTALLED_APPS = [
+    'jquery',
+    'underscore',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -136,8 +142,19 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),
+    # 'djangobower.finders.BowerFinder',
     #'/var/www/static/',
 ]
+
+# STATICFILES_FINDERS = [
+#     'django.contrib.staticfiles.finders.FileSystemFinder',
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#     'djangobower.finders.BowerFinder',
+# ]
+
+BOWER_COMPONENTS_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'components')
+
+# BOWER_PATH = '/usr/bin/bower'
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn")
 
