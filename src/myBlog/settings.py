@@ -39,13 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'posts',
     'dash',
+    'django_nvd3',
     'djangobower',
+    # 'djangobower.finders.BowerFinder',
 ]
 
-BOWER_INSTALLED_APPS = [
-    'jquery',
-    'underscore',
-]
 
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
@@ -142,21 +140,26 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),
-    # 'djangobower.finders.BowerFinder',
     #'/var/www/static/',
 ]
-
-# STATICFILES_FINDERS = [
-#     'django.contrib.staticfiles.finders.FileSystemFinder',
-#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#     'djangobower.finders.BowerFinder',
-# ]
-
-BOWER_COMPONENTS_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'components')
-
-# BOWER_PATH = '/usr/bin/bower'
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn")
 
 MEDIA_URL = '/media/'
+
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media_cdn")
+
+
+# Django-bower
+
+
+BOWER_INSTALLED_APPS = [
+    'jquery',
+    'underscore',
+    'd3#3.3.13',
+    'nvd3#1.7.1',
+]
+
+BOWER_COMPONENTS_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'components')
+
+BOWER_PATH = '/usr/local/bin/bower'
