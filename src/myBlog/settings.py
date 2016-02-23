@@ -139,27 +139,38 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
     #'/var/www/static/',
 ]
 
+
+
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn")
+# STATIC_ROOT = ''
 
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media_cdn")
 
 
+
+
 # Django-bower
 
-
-BOWER_INSTALLED_APPS = [
-    'jquery',
-    'underscore',
-    'd3#3.3.13',
-    'nvd3#1.7.1',
-]
 
 BOWER_COMPONENTS_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'components')
 
 BOWER_PATH = '/usr/local/bin/bower'
+
+BOWER_INSTALLED_APPS = [
+    'jquery#1.9',
+    'underscore',
+    'd3#3.5.5',
+    'nvd3#1.7.1',
+]
+
+try:
+    from settings_local import *
+except ImportError:
+    pass
