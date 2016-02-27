@@ -4,21 +4,23 @@ from django.http import HttpResponse, HttpResponseRedirect
 
 # from .forms import DashForm
 from .models import Dash
+from .forms import DashForm
 # Create your views here.
 
 def dash_create(request):
-    # file = request.FILES['fileUpload']
-    # if file.is_valid():
-    #     data = [row for row in csv.reader(file.read().splitlines())]
-    #     data_instance = file.save(commit=False)
-    #     data_instance.save(using='dashdb')
-    #     message.success(request, 'Successfully Uploaded')
-    #     return HttpResponseRedirect(instance.get_absolute_url())
-    # context = {
-    #     'file': file
-    # }
-    # return render(request, 'dash_form.html', context)
-    return HttpResponse('<h1>DASH</h1>')
+    form = DashForm(request.POST or None, request.FILES or None)
+    if form.is_valid():
+        instance = form.save(commit=False)
+        instance.save(using='dashdb')
+        reader = csv.reader(request.FILES['file_upload'])
+        data = csv.DictReader(request.FILES['file_upload'])
+        print data
+    context = {
+        'form': form,
+     }
+    return render(request, 'dash_form.html', context)
+
+    # return HttpResponse('<h1>DASH</h1>')
 
 def dash_detail(request, id=None): #retrieve
 # 	data_instance = get_object_or_404(Dash, id=id)
