@@ -1,3 +1,44 @@
-h1{
+body{
+   width: 960px;
+   margin: 0 auto;
+   border-bottom: 1px solid #cccccc;
+   margin-bottom: 120px;
+}
+
+.name{
+   display: inline-block;
+   /*width: 400px;*/
+}
+
+.title{
+   display: inline-block;
+   /*width:480px;*/
+   float: right;
+   margin-top: 30px;
+}
+
+.top{
+   width: 960px;
+   color:#777777;
+   border-bottom: 1px solid #cccccc;
+}
+
+
+h2, h3{
+   color:#777777;
+}
+
+.container{
+   margin: 0 auto;
+   width:960px;
+   text-align: center;
+   color:#777777;
+}
+
+p{
+   text-align: center;
+}
+
+a, li{
    color:#777777;
 }

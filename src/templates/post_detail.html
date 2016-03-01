@@ -3,12 +3,16 @@
 {% block head_title %} {{instance.title}} | {{ block.super }} {% endblock head_title %}
 
 {% block content %}
-<h1>{{ title }} </h1>
+<!-- <h3 class='title'> {{ title }} </h3> -->
 {% if instance.image %}
 <img src='{{ instance.image.url}}' />
 {% endif %}
 <!-- {{ instance.title }}<br/> -->
-{{ instance.content }}<br/>
+<p>
+
+
+   {{ instance.content }}</br>
+</p>
 <!-- {{ instance.timestamp }}<br/> -->
 <!-- {{ instance.updated }}<br/> -->
 <!-- {{ instance.id }}<br/> -->
