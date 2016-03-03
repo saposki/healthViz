@@ -40,14 +40,21 @@ def dash_chart(request):
         raw_content_array.append(i.read())
     # print queryset_array
 
+    data_string_array = []
+    for i in raw_content_array:
+        data_string_array.append(default_storage.open(i).read())
+    # print data_string_array
+
+
     queryset = Dash.objects.all()
-    # queryset = queryset_array
+    # queryset = queryset
 
     context = {
         'object_list': queryset,
         'file': 'List',
         'raw_file': queryset_array,
-        'file_string': raw_content_array,
+        'file_location': raw_content_array,
+        'data_string': data_string_array,
     }
     # print queryset
     return render(request, 'dash_chart.html', context)

@@ -1,15 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{%  for obj in  object_list %}
-   {{ obj.file }}
-{% endfor %}
 
-{% for i in raw_file %}
-   {{ i }}
-{% endfor %}
 
-{% for i in file_string %}
+
+
+{% for i in data_string %}
    {{ i }}
 {% endfor %}
 
