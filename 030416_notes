@@ -1,0 +1,55 @@
+>>> from __future__ import unicode_literals
+>>> from django.core.files.storage import default_storage
+>>> from django.core.files.base import ContentFile
+
+>>> queryset_array = []
+>>> for i in Dash.objects.all():
+...    queryset_array.append(ContentFile(i.file))
+...
+>>> raw_content_array = []
+>>> for i in queryset_array:
+...    raw_content_array.append(i.read())
+...
+>>> data_string_array = []
+>>> for i in raw_content_array(default_storage.open(i).read())
+
+>>> for i in raw_content_array:
+...    data_string_array.append(default_storage.open(i).read())
+
+
+try
+for i in data_string_array[]
+
+>>> query = []
+>>> raw = []
+>>> stringer = []
+>>> row = []
+>>> new_row = []
+
+for i in Dash.objects.all():
+   query.append(ContentFile(i.file))
+
+for i in query:
+   raw.append(i.read())
+
+for i in raw:
+   stringer.append(default_storage.open(i).read())
+
+for i in stringer:
+   print i
+
+row_array
+for i in range(len(stringer)):
+   row_array.append(stringer[i][4:len(stringer[i])])
+
+final_row_array = []
+
+for i  in range(len(row_array)):
+   row.append(row_array[i].split('\r\n'))
+   final_row_array.append(row)
+
+for i in final_row_array:
+   len(i[0]) //# of records
+
+i[0][1351]  //last row of first spread sheet
+i[1][1351]  //last row of second spread sheet

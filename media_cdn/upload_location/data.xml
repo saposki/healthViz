@@ -1,0 +1,694 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "REGION",
+                   "display": "WHO region"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2015",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 542"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2015",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "195 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2010",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 620"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2010",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "205 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2005",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 712"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2005",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "214 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2000",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 840"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "2000",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "227 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "1995",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 914"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "1995",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "224 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "1990",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 965"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "YEAR": "1990",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "215 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2015",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 52"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2015",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "7 900"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2010",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 62"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2010",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "9 500"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2005",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 67"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2005",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "11 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2000",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 76"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "2000",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "12 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "1995",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 89"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "1995",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "14 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "1990",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 102"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "YEAR": "1990",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "16 000"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2015",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 164"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2015",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "61 000"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2010",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 206"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2010",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "78 000"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2005",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 268"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2005",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "106 000"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2000",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 352"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "2000",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "140 000"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "1995",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 438"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "1995",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "173 000"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "1990",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 525"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "YEAR": "1990",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "208 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2015",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 16"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2015",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "1 800"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2010",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 19"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2010",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "2 100"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2005",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 26"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2005",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "2 800"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2000",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 33"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "2000",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "3 400"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "1995",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 42"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "1995",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "4 600"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "1990",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 44"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "YEAR": "1990",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "5 500"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2015",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 166"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2015",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "28 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2010",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 199"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2010",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "32 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2005",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 250"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2005",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "36 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2000",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 304"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "2000",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "42 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "1995",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 340"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "1995",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "46 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "1990",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 362"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "YEAR": "1990",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "49 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2015",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 41"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2015",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "9 800"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2010",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 50"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2010",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "12 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2005",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 63"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2005",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "14 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2000",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 75"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "2000",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "17 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "1995",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 89"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "1995",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "24 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "1990",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 114"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "YEAR": "1990",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "38 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2015",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 216"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2015",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "303 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2010",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 246"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2010",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "339 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2005",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 288"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2005",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "384 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2000",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 341"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "2000",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "442 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "1995",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 369"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "1995",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "486 000"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "1990",
+                          "GHO": "Maternal mortality ratio (per 100 000 live births)"
+                        },
+                "Value": " 385"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "YEAR": "1990",
+                          "GHO": "Number of maternal deaths"
+                        },
+                "Value": "532 000"
+              }
+      ]
+}
