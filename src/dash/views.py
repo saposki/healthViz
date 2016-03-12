@@ -1,5 +1,8 @@
 from __future__ import unicode_literals
 import csv
+import httplib
+import xml.etree.ElementTree as ElementTree
+import json
 
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
@@ -39,14 +42,39 @@ def dash_chart(request):
     for i in queryset_array:
         raw_content_array.append(i.read())
 
-
     # print queryset_array
 
 
     data_string_array = []
     for i in raw_content_array:
-
         data_string_array.append(default_storage.open(i).read())
+
+# at this point entire xml upload is a list
+# it will need to be converted to a string to use the json.loads()
+# json.loads convert strings to dictonary
+# with correct formatting of the string we should get desired dict.
+
+# below we have created a string variable 'str'
+# 'str' will hold the string equivalent of the xml file being read
+
+    str_array = []
+    str = ''
+    for i in data_string_array:
+        str += i
+
+# here we call the json.loads method after importing json lib
+# 'json.loads() converts 'str' to a valid JSON dict'
+
+    str_dict = json.loads(str)
+    print str_dict
+
+
+
+    # xml_container = []
+    # for i in data_string_array:
+        # print i
+
+    # print xml_container
 
     # print len(data_string_array)
     # print data_string_array
@@ -87,7 +115,12 @@ def dash_chart(request):
         'raw_file': queryset_array,
         'file_location': raw_content_array,
         'data_string': data_string_array,
+        'json_dict': str_dict,
         # 'row': row_array,
     }
     # print queryset
+    # {% for i in data_string %}
+    #    {{i}}
+    # {% endfor %}
+
     return render(request, 'dash_chart.html', context)
