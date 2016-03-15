@@ -1,9 +1,24 @@
 {% extends 'base.html' %}
+
+
 {% block content %}
 
-{% for i in json_dict %}
+<script>
+   d3.json('http://127.0.0.1:8888/dash/endpoint/', function(error, data){
+
+   })
+
+</script>
+
+<!-- {% for i in json_end_point %}
+
+{{i}}
+
+{% endfor %} -->
+
+<!-- {% for i in json_dict %}
    {{ i }}
 
-{% endfor %}
+{% endfor %} -->
 
 {% endblock content %}
