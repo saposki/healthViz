@@ -56,7 +56,7 @@ def dash_json_end_point(request):
     str_dict = json.loads(str)
 
     response = JsonResponse(str_dict, safe=False)
-    print type(response)
+    # print type(response)
 
     return response
 
@@ -69,9 +69,6 @@ def dash_chart(request):
     raw_content_array = []
     for i in queryset_array:
         raw_content_array.append(i.read())
-
-    # print queryset_array
-
 
     data_string_array = []
     for i in raw_content_array:
@@ -96,16 +93,15 @@ def dash_chart(request):
 # 'json.loads() converts 'str' to a valid JSON dict'
 
     str_dict = json.loads(str)
-    # print str_dict
 
-#
     response = JsonResponse(str_dict, safe=False)
-    print type(response)
+    # print type(response)
 
+    ##############################################################
+    #  for addressing .csv
     # row = []
     # row = data_string_array[0][4:len(data_string_array[0])]
     # print len(row)
-
 
     # new_row = []
     # print len(new_row)
@@ -125,12 +121,9 @@ def dash_chart(request):
 
     # row_array = row_array[2:len(row_array)]
     # print len(row_array)
-
-    queryset = Dash.objects.all()
+    ###########################################################
 
     context = {
-        'object_list': queryset,
-        # 'file': 'List',
         'raw_file': queryset_array,
         'file_location': raw_content_array,
         'data_string': data_string_array,
