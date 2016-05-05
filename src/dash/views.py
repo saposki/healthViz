@@ -62,17 +62,17 @@ def dash_json_end_point(request):
 
 
 def dash_chart(request):
-    queryset_array  = []
-    for i in Dash.objects.all():
-        queryset_array.append(ContentFile(i.file))
-
-    raw_content_array = []
-    for i in queryset_array:
-        raw_content_array.append(i.read())
-
-    data_string_array = []
-    for i in raw_content_array:
-        data_string_array.append(default_storage.open(i).read())
+    # queryset_array  = []
+    # for i in Dash.objects.all():
+    #     queryset_array.append(ContentFile(i.file))
+    #
+    # raw_content_array = []
+    # for i in queryset_array:
+    #     raw_content_array.append(i.read())
+    #
+    # data_string_array = []
+    # for i in raw_content_array:
+    #     data_string_array.append(default_storage.open(i).read())
 
 # at this point entire xml upload is a list
 # it will need to be converted to a string to use the json.loads()
@@ -84,17 +84,17 @@ def dash_chart(request):
 # below we have created a string variable 'str'
 # 'str' will hold the string equivalent of the xml file being read
 
-    str_array = []
-    str = ''
-    for i in data_string_array:
-        str += i
+    # str_array = []
+    # str = ''
+    # for i in data_string_array:
+    #     str += i
 
 # here we call the json.loads method after importing json lib
 # 'json.loads() converts 'str' to a valid JSON dict'
 
-    str_dict = json.loads(str)
-
-    response = JsonResponse(str_dict, safe=False)
+    # str_dict = json.loads(str)
+    #
+    # response = JsonResponse(str_dict, safe=False)
     # print type(response)
 
     ##############################################################
@@ -115,21 +115,21 @@ def dash_chart(request):
 
     # print data_string_array[0][4]
     # row_array = []
-
+    #
     # for i in data_string_array:
-        # row_array.append(i.split(','))
+    #     row_array.append(i.split(','))
 
     # row_array = row_array[2:len(row_array)]
     # print len(row_array)
     ###########################################################
 
     context = {
-        'raw_file': queryset_array,
-        'file_location': raw_content_array,
-        'data_string': data_string_array,
-        'json_dict': str_dict,
-        # 'row': row_array,
-        'json_end_point': response,
+        # 'raw_file': queryset_array,
+        # 'file_location': raw_content_array,
+        # 'data_string': data_string_array,
+        # 'json_dict': str_dict,
+        # 'row': row_array
+        # 'json_end_point': response,
     }
 
     return render(request, 'dash_chart.html', context)

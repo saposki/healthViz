@@ -5,12 +5,14 @@
 
 <script>
    d3.json('http://127.0.0.1:8888/dash/endpoint/', function(error, data){
-      console.log(data.dimension)
+      for(var i = 0; i < data.fact.length; i++){
+         // console.log(data.fact[i].dims)
+         console.log(data)
+      }
    })
-
 </script>
 
-<!-- {% for i in json_end_point %}
+<!-- {% for i in row_array %}
 
 {{i}}
 
