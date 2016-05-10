@@ -60,3 +60,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+#notes
+030416_notes
+note_two.md
+notes.md
+
+lib/python*
