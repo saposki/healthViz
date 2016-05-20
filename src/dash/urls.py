@@ -12,7 +12,7 @@ from .views import (
 	)
 
 urlpatterns = [
-	url(r'^$', dash_list, name='list'),
+	url(r'^$', dash_list),
     url(r'^create/$', dash_create),
     url(r'^endpoint/$', dash_json_end_point),
     url(r'^chart/$', dash_chart),

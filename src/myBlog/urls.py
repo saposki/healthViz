@@ -25,7 +25,8 @@ from django.views.static import serve
 # from django.views.generic.simple import direct_to_template
 
 
-urlpatterns = [
+urlpatterns = [url(r'^', include("dash.urls", namespace='dash')),
+# r'^/' and r'/'  slashes unecessary  
     url(r'^admin/', admin.site.urls),
     url(r'^posts/', include("posts.urls", namespace='posts')),
     url(r'^dash/', include("dash.urls", namespace='dash')),
